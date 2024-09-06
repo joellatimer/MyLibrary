@@ -7,7 +7,7 @@ const mysql = require('mysql')
 require("dotenv").config()
 
 const app = express()
-const port = process.env.PORT || 5000
+const port = 80
 
 const pool = mysql.createPool({
   connectionLimit: 100,
