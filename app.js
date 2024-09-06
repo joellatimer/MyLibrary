@@ -7,15 +7,15 @@ const mysql = require('mysql')
 require("dotenv").config()
 
 const app = express()
-const port = 80
+const port = 5000
 
 const pool = mysql.createPool({
   connectionLimit: 100,
   host     : '167.114.119.200',
   password :'t8zxBJmvFw:zf8boy2j56:TnXVT9jCvb',
-  database : library,
+  database : 'library',
   port : 2394,
-  user: root
+  user: 'root'
 
 })
 

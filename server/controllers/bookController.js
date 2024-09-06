@@ -3,9 +3,9 @@ const mysql = require('mysql');
 // Connection Pool
 let db = mysql.createConnection({
   host: '167.114.119.200',
-  user: root,
+  user: 'root',
   password:'t8zxBJmvFw:zf8boy2j56:TnXVT9jCvb' ,
-  database: library,
+  database: 'library',
   port : 2394
   
 });
