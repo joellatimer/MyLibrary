@@ -1,0 +1,51 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">New book</li>
+  </ol>
+</nav>
+
+
+<form class="row g-3 needs-validation" method="post" action="/addbook" novalidate>
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="First Name" name="author_firstName">
+            <label for="floatingInput">First Name</label>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Last Name" name="author_lastName">
+            <label for="floatingInput">Last Name</label>
+        </div>
+    </div>
+
+   <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Title" name="title">
+            <label for="floatingInput">Title</label>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Genre" name="genre">
+            <label for="floatingInput">Genre</label>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Location" name="location">
+            <label for="floatingInput">Location</label>
+        </div>
+    </div>
+
+   
+
+    <div class="col-12 d-grid">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+   
+
+
+</form> 
