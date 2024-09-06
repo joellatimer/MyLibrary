@@ -15,7 +15,6 @@
     "bootstrap-icons": "^1.11.3",
     "express": "^4.19.2",
     "express-handlebars": "^8.0.1",
-    "jshint": "^2.13.6",
     "mysql": "^2.18.1"
   }
 }
