@@ -2,11 +2,12 @@ const mysql = require('mysql');
 
 // Connection Pool
 let db = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASS,
-  database: process.env.DB_NAME,
-  port : process.env.DB_PORT
+  host: '167.114.119.200',
+  user: root,
+  password:'t8zxBJmvFw:zf8boy2j56:TnXVT9jCvb' ,
+  database: library,
+  port : 2394
+  
 });
 
 // View Users

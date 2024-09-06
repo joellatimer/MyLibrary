@@ -11,11 +11,11 @@ const port = 80
 
 const pool = mysql.createPool({
   connectionLimit: 100,
-  host     : process.env.DB_HOST,
-  password :process.env.DB_PASS,
-  database : process.env.DB_NAME,
-  port : process.env.DB_PORT,
-  user: process.env.DB_USER
+  host     : '167.114.119.200',
+  password :'t8zxBJmvFw:zf8boy2j56:TnXVT9jCvb',
+  database : library,
+  port : 2394,
+  user: root
 
 })
 
