@@ -139,7 +139,7 @@ exports.viewall = (req, res) => {
     if (!err) {
       res.render('view-user', { rows });
     } else {
-      console.log(err);
+      console.log(err,`this is the error`);
     }
     // console.log('The data from books table: \n', rows);
   });
