@@ -9,20 +9,6 @@ require("dotenv").config()
 const app = express()
 const port = 5000
 
-const pool = mysql.createPool({
-  connectionLimit: 100,
-  host     : '167.114.119.200',
-  password :'t8zxBJmvFw:zf8boy2j56:TnXVT9jCvb',
-  database : 'library',
-  port : 2394,
-  user: 'root'
-
-})
-
-pool.getConnection((err, connection)=> {
-  if(err) throw err
-  console.log("Connected as ID" + connection.threadId)
-})
 
 app.use(bodyParser.urlencoded({extended: false}))
 

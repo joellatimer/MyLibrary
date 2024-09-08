@@ -1,14 +1,14 @@
-const mysql = require('mysql');
-
+const db = require('../../config/database')
 // Connection Pool
-let db = mysql.createConnection({
-  host: '167.114.119.200',
-  user: 'root',
-  password:'t8zxBJmvFw:zf8boy2j56:TnXVT9jCvb' ,
-  database: 'library',
-  port : 2394
+// let db = mysql.createConnection(
+  // host:process.env.DB_HOST,
+  // password:process.env.DB_PASSWORD,
+  // database:process.env.DB_NAME,
+  // port:process.env.DB_PORT,
+  // user:process.env.DB_USER
+  // 'mysql://ncuser_4963:dYdjwS5mVGIx5cYMGmjquy8DDWEkJz@mysql-usermanag-25846.nodechef.com:2394/usermanag'
   
-});
+// );
 
 // View Users
 exports.view = (req, res) => {
