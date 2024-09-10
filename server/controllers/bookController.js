@@ -1,18 +1,9 @@
 const db = require('../../config/database')
-// Connection Pool
-// let db = mysql.createConnection(
-  // host:process.env.DB_HOST,
-  // password:process.env.DB_PASSWORD,
-  // database:process.env.DB_NAME,
-  // port:process.env.DB_PORT,
-  // user:process.env.DB_USER
-  // 'mysql://ncuser_4963:dYdjwS5mVGIx5cYMGmjquy8DDWEkJz@mysql-usermanag-25846.nodechef.com:2394/usermanag'
-  
-// );
+
 
 // View Users
 exports.view = (req, res) => {
- 
+
   db.query('SELECT Id, title, genre, location, CONCAT(author_firstName, " ", author_lastName) AS author FROM library.books', (err, rows) => {
    
     if (!err) {

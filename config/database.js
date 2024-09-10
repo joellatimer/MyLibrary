@@ -1,15 +1,34 @@
-const mysql = require('mysql')
+const sqlite3 = require('sqlite3')
 
 
 
-let db = mysql.createConnection({
-    host:process.env.DB_HOST,
-    password:process.env.DB_PASSWORD,
-    database:process.env.DB_NAME,
-    port:process.env.DB_PORT,
-    user:process.env.DB_USER
-    
-    
-  });
+const DBSOURCE = "db.sqlite"
 
-  module.exports = db
+let db = new sqlite3.Database(DBSOURCE, (err) => {
+    if (err) {
+      // Cannot open database
+      console.error(err.message)
+      throw err
+    }else{
+        console.log('Connected to the SQLite database.')
+        db.run(`CREATE TABLE books (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            author_firstName text, 
+			author_lastName text,
+            title text UNIQUE, 
+            genre text, 
+            location text
+            )`,
+        (err) => {
+            if (err) {
+                // Table already created
+            }else{
+                // Table just created, creating some rows
+               
+            }
+        });  
+    }
+});
+
+
+module.exports = db
