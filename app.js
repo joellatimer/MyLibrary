@@ -1,7 +1,7 @@
 const express = require("express")
 const {engine} = require("express-handlebars")
 const bodyParser = require("body-parser") 
-const mysql = require('mysql2')
+const mysql = require('mysql')
 
 
 require("dotenv").config()
